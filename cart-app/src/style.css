@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    font-family: arial;
+    background-color: rgb(202, 200, 200);
+}
 
