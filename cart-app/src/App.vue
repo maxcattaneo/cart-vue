@@ -1,5 +1,6 @@
 <template>
-     <Header />
+     <Header/>
+     <Cart/>
      <section class="grid grid-cols-3 justify-center mx-20 gap-6 mt-6 place-items-center">
       <div v-for="(beer, index) in beers" :key="index" >
         <Card :beer="beer" />
@@ -10,6 +11,7 @@
 <script setup>
 import Header from "./components/header.vue";
 import Card from "./components/card.vue";
+import Cart from "./components/Cart.vue"
 import {ref} from "vue";
 const beers = ref([]);
 async function getBeer() {
